@@ -10,3 +10,9 @@ variable "account_tier" {
     default = "Standard"
   
 }
+
+variable "account_replication_type" {
+  description = "tipo de replicação de dados da Storage Account"
+  type = string
+  default = "LRS"
+}
