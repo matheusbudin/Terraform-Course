@@ -28,3 +28,10 @@ resource "azurerm_storage_container" "first_container" {
   storage_account_name = ""
   #container_access_type = "private" -> opcional
 }
+
+para sobre escrever o valor da variável por linha de comando:
+
+export TF_VAR_nomeVar = "Valor". Exemplo: export TF_VAR_location = "West Europe"
+ou terrafrom plan -var='location=Brazil South'
+
+ou criando um arquivo terraform.tfvars == var.auto.tfvars (equivalente) == var (mas nesse caso linha de comando = terraform plan -var-file='var')
